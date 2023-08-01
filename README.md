@@ -5,6 +5,22 @@
 
   [image visualization of a tree structure](https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png)
 
+### Most commonly used Types of Trees
+- Binary Tree: A binary tree is a tree data structure where each node has at most two children, referred to as the left child and the right child. Binary trees are commonly used in various algorithms like binary search, binary tree traversals, and binary heap implementations.
+
+- Binary Search Tree (BST): A binary search tree is a binary tree where each node's left child has a value less than the node, and the right child has a value greater than the node. This property makes searching, insertion, and deletion operations efficient
+- Trie (Prefix Tree): A trie is a tree-like data structure used for efficiently storing and searching strings. It is particularly useful for tasks like autocomplete, spell-checking, and searching for words with common prefixes
+
+- N-ary Tree: An N-ary tree is a tree data structure where each node can have more than two children. In contrast to binary trees, N-ary trees allow a variable number of child nodes per parent node
+
+- Heap: Although a heap is not a strict tree data structure, it can be represented as a binary tree. A heap is a specialized tree-based data structure that satisfies the heap property, making it efficient for finding the maximum or minimum element in constant time and for efficiently extracting the extremum element
+
+others
+- AVL Tree
+- Red-Black Tree
+- Segment Tree
+***
+
  ### Terminologies
  - Degree - The degree of a node is the total number of children it has
  - Depth - Depth of a node is the number of edges from the root to that node (depth of root node is always zero)
