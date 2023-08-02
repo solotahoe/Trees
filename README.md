@@ -39,11 +39,15 @@ others
   3. Dynamic Data: Non-linear data structures can handle dynamic data well, as they allow easy insertion and deletion of elements without much disruption to the overall structure
   4. Hierarchical Representation: Non-linear data structures like trees allow for hierarchical representation, which can model real-world relationships more accurately. For example, an organization's hierarchy, file systems, and family trees can be represented more naturally using trees
 
-  5. Efficient Data Retrieval: Depending on the specific non-linear data structure and the use case, retrieval of specific data elements can be more efficient compared to linear data structures. For instance, in balanced binary search trees, searching for an element takes O(log n) time, which is faster than linear search in an array (O(n))
+  5. Efficient Data Retrieval: Depending on the specific non-linear data structure and the use case, retrieval of specific data elements can be more efficient compared to linear data structures. For instance, in balanced binary search trees, searching for an element takes O(log n) time, which is faster than linear search in an array (O(n))  ... time required to search is propotinal to the size of the data set...
 
 
-
-
+### Operations u can use in a BST
+  - insertion
+  - Search
+  - DFS - Depth-First Search - it is a traversal algorithm used to visit all the nodes in a tree or graph data structure
+  - BFS - Breadth-First Search  - it is a traversal algorithm used to visit all the nodes in a tree or graph data structure level by level.
+  - Deletion  - remove a node given its value
 
 
 
@@ -54,3 +58,6 @@ others
  1. representing file systems
  2. organizing hierarchical data like organizational charts, DOM
  3. implementing search algorithms like binary search trees(most popular implementation)
+ 4. Sorting
+
+

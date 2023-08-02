@@ -1,7 +1,5 @@
 // Problem Statement:
 // Given a binary tree, find the maximum depth (height) of the tree. The maximum depth of a binary tree is the length of the longest path from the root node to any leaf node
-
-
 class TreeNode {
     constructor(value) {
       this.value = value;
