@@ -23,7 +23,7 @@ class Node {
         this.insertNode(this.root, newNode);
       }
     }
-  
+    //helper function
     insertNode(node, newNode) {
       if (newNode.value < node.value) {
         if (node.left === null) {

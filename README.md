@@ -55,9 +55,41 @@ others
 
 - Trees are widely used in computer science and programming due to their versatility and efficiency in organizing and representing data in a hierarchical manner.
  e.g 
- 1. representing file systems
- 2. organizing hierarchical data like organizational charts, DOM
+ 1. representing file systems  -  File systems often use BSTs to organize and search for files and directories efficiently.
+ 2. organizing hierarchical data like organizational charts, DOM (NOT A TREEE BUT tree-like structure to represent the hierarchical relationships among HTML elements in a web page, **each HTML element e.g., div, h1,  etc.) is a node in the tree,**
  3. implementing search algorithms like binary search trees(most popular implementation)
  4. Sorting
+ 5. auto predictions in keyboards e.g Search Autocomplete: Trie (a type of tree) can be used to implement an efficient search autocomplete feature, suggesting products or categories as the user types in the search bar.
+
+ 6. Contacts List: Many contact management applications use BSTs to sort and search contacts by name.
+ 7. Spell Checkers: BSTs are used in spell checkers to efficiently check if a given word is present in the dictionary
+
+
+  ## How to use BTS 
+
+   - There is no built-in method that directly uses a Binary Search Tree (BST). JavaScript provides basic data structures like arrays and objects, but it does not include native support for tree data structures.
+
+   - If you want to use a BST in JavaScript, you'll need to implement it yourself or use a third-party library that provides BST functionality
+
+   - LIBRARIES EXAMPLES INCLUDE bintrees" AND "binary-search-tree
+
+   `````` javascript
+   const bintrees = require('bintrees');
+const { AVLTree } = bintrees;
+
+// Create a new AVLTree
+const bst = new AVLTree((a, b) => a.key - b.key);
+
+// Insert elements
+bst.insert({ key: 10, value: 'data1' });
+bst.insert({ key: 5, value: 'data2' });
+bst.insert({ key: 15, value: 'data3' });
+
+// Search for elements
+const node = bst.find({ key: 5 });
+console.log(node && node.value); // Output: 'data2'
+
+
+
 
 
