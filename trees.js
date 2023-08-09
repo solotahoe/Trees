@@ -33,7 +33,7 @@ console.log(familyTree.children[0].children[0].name)
 function printFamilyTree(node, level = 0) {
     const indentation = "  ".repeat(level); // Add spaces for indentation
   
-    console.log(`${indentation}- ${node.name}`);
+   // console.log(`${indentation}- ${node.name}`);
   
     for (const child of node.children) {
       printFamilyTree(child, level + 1);

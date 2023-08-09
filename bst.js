@@ -56,6 +56,46 @@ class Node {
         return this.searchNode(node.right, target);
       }
     }
+
+    delete(value) {
+      this.root = this.deleteNode(this.root, value);
+    }
+  
+    deleteNode(node, value) {
+      if (node === null) {
+        return null;
+      }
+  
+      if (value < node.value) {
+        node.left = this.deleteNode(node.left, value);
+      } else if (value > node.value) {
+        node.right = this.deleteNode(node.right, value);
+      } else {
+        // Node with only one child or no child
+        if (node.left === null) {
+          return node.right;
+        } else if (node.right === null) {
+          return node.left;
+        }
+  
+        // Node with two children, get the in-order successor (smallest in the right subtree)
+        node.value = this.minValueNode(node.right).value;
+  
+        // Delete the in-order successor
+        node.right = this.deleteNode(node.right, node.value);
+      }
+  
+      return node;
+    }
+
+     // Helper method to find the node with the smallest value in a tree
+  minValueNode(node) {
+    let current = node;
+    while (current.left !== null) {
+      current = current.left;
+    }
+    return current;
+  }
   }
   
   // Example usage:

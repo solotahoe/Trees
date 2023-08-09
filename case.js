@@ -11,7 +11,7 @@ class Node {
   }
 }
 
-class SpellChecker {
+class SpellChecker {    
   constructor() {
     this.root = null;
   }
