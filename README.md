@@ -47,7 +47,7 @@
  1. There are three cases to consider when deleting a node
   - Node has no children: Simply remove the node from the tree
   - Node has one child: Remove the node and replace it with its child
-  - Node has two children: Find the node's in-order successor (the smallest node in its right subtree), replace the node's value with the successor's value.
+  - Node has two children: Find the node's in-order successor (the smallest node in its right subtree), replace the node's value with the successor's value.or in-order predecessor (the largest node in its left subtree) and then the successor/predecessor node is deleted
 
 
 

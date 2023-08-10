@@ -71,9 +71,13 @@ class Node {
       } else if (value > node.value) {
         node.right = this.deleteNode(node.right, value);
       } else {
-        // Node with only one child or no child
+        // we have found the value so we address the threee screnario of deleting a node
+
+        //no left node
         if (node.left === null) {
           return node.right;
+
+          //no right node
         } else if (node.right === null) {
           return node.left;
         }
@@ -108,14 +112,19 @@ class Node {
   bst.insert(7);
   bst.insert(9);
 
+
+  //delet node 5
+  bst.delete(5)
+
   
-  const targetValue = 10;
-  const result = bst.search(targetValue);
+  
+  // const targetValue = 10;
+  // const result = bst.search(targetValue);
   
   console.log(bst)
-  if (result) {
-    console.log(`Found ${targetValue} in the BST.`);
-  } else {
-    console.log(`${targetValue} not found in the BST.`);
-  }
+  // if (result) {
+  //   console.log(`Found ${targetValue} in the BST.`);
+  // } else {
+  //   console.log(`${targetValue} not found in the BST.`);
+  // }
   
